@@ -1,0 +1,66 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+:root {
+    --yellow: rgb(242, 187, 5);
+    --black: rgb(15, 10, 10);
+    --red: rgb(236, 40, 51);
+
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+/* Navbar */
+.navbar {
+    height: 140px;
+    transition: 0.5s;
+}
+
+.nav-link {
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: white !important;
+    text-shadow: 2px 2px 5px var(--red), -2px -2px 5px var(--red);
+}
+
+
+.logo {
+    width: 50px;
+}
