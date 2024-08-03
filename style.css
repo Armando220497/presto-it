@@ -15,9 +15,13 @@ h4,
 
 :root {
     --yellow: rgb(242, 187, 5);
-    --black: rgb(15, 10, 10);
+    --black: rgb(1, 1, 1);
     --red: rgb(236, 40, 51);
+}
 
+body {
+    background-color: var(--black);
+    color: var(--yellow);
 }
 
 .bg-yellow {
@@ -60,7 +64,129 @@ h4,
     text-shadow: 2px 2px 5px var(--red), -2px -2px 5px var(--red);
 }
 
-
 .logo {
     width: 50px;
+}
+
+.logo2 {
+    width: 100px;
+    transition: 0.5s;
+}
+
+/* Header */
+.header {
+    background-image: url(https://media.istockphoto.com/id/1272787782/it/video/animazione-di-salto-iperspaziale.jpg?s=640x640&k=20&c=yrE1l4jixTXkl22hvR1WJd10oW79nVGGuwEDzQDo6zM=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-custom {
+    color: var(--yellow);
+    background-color: var(--black);
+    border: 2px solid var(--yellow);
+    border-radius: 50px;
+    margin: 0px 15px;
+    padding: 20px 30px;
+    transition: 0.5s;
+}
+
+.btn-custom:hover {
+    color: var(--black);
+    background-color: var(--yellow);
+    transform: scale(1.1);
+}
+
+.positioned {
+    position: relative;
+    top: -150px;
+}
+
+.col-custom {
+    padding: 10px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--black);
+}
+
+.col-custom:hover {
+    transform: scale(1.1);
+    background-color: var(--black);
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+@media screen and (max-width: 600px) {
+    .positioned {
+        position: static;
+    }
+}
+
+/* numeri incrementali */
+
+.number {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* swiper */
+.swiper {
+    height: 600px;
+}
+
+.card-review {
+    height: 250px;
+    width: 500px;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* accordion style pagina annunci*/
+.accordion-item,
+.accordion-button {
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--red);
+    background-color: var(--black);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* card-custom */
+
+.card-custom {
+
+    width: 30%;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.img-card {
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+}
+
+/* titolo annunci */
+
+.h1-annunci {
+    text-align: center;
 }
