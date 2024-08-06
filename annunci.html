@@ -22,12 +22,12 @@
 <body>
 
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-md bg-black ">
+    <nav id="navbar" class="navbar navbar-expand-md bg-nav ">
         <div id="collapse" class="container-fluid">
-            <a class="navbar-brand" href="#"><img id="logoNavbar" src="media/logo giallo.png" alt="Logo del sito"
+            <a class="navbar-brand" href="#"><img id="logoNavbar" src="media/logo-beige.png" alt="Logo del sito"
                     class="logo"></a>
 
-            <img id="spada-laser" src="media/spada-gialla.png" alt="spada" class="img-fluid d-md-none logo2"
+            <img id="fiore" src="media/logo-beige2.png" alt="fiore" class="img-fluid d-md-none logo2"
                 data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,7 +39,7 @@
                         <a class="nav-link" href="./annunci.html">Annunci</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Chi Siamo</a>
+                        <a class="nav-link" href="./aboutUs.html">Chi Siamo</a>
                     </li>
                 </ul>
                 <div class="logo"></div>
@@ -48,12 +48,12 @@
     </nav>
     <!-- Navbar end -->
 
-    <h1 class="h1-annunci"> Pagina degli annunci</h1>
+    <h1 class="h1-annunci "> Pagina degli annunci</h1>
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-3">
-                <h3>Filtra per:</h3>
+            <div class="col-12 col-md-2">
+                <h3 style="color: var(--blue);">Filtra per:</h3>
 
                 <!-- accordion -->
                 <div class="accordion sticky-top" id="accordionExample">
@@ -93,7 +93,7 @@
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body d-flex justify-content-center ">
                                 <input id="wordInput" type="text">
                             </div>
                         </div>
@@ -103,7 +103,7 @@
             <!-- accordion end -->
 
             <!-- card -->
-            <div id="cardWrapper" class="col-12 col-md-9 d-flex justify-content-around flex-wrap">
+            <div id="cardWrapper" class="col-12 col-md-10 d-flex justify-content-around flex-wrap">
                 <!-- This is where the cards will be dynamically added -->
             </div>
         </div>

@@ -1,3 +1,20 @@
+let navbar = document.querySelector('#navbar');
+let links = document.querySelectorAll('.nav-link');
+let logoNavbar = document.querySelector('#logoNavbar');
+let fiore = document.querySelector('#fiore');
+
+// Navbar
+let nav = navbar.style.backgroundColor = 'var(--blue)';
+let navLinks = links.forEach((link) => {
+    link.style.color = 'var(--beige)';
+});
+
+
+
+// navbar end
+
+
+
 fetch('./annunci.json')
     .then((response) => response.json())
     .then((data) => {
@@ -45,11 +62,11 @@ fetch('./annunci.json')
                 let div = document.createElement('div');
                 div.classList.add('card-custom');
                 div.innerHTML = `<img src="https://picsum.photos/300?random=${i}" alt="immagine casuale" class="img-fluid img-card"> 
-                <p class="h3" title="${annuncio.name}">${truncateWord(
+                <p class="h3" style="color: var(--blue);" title="${annuncio.name}">${truncateWord(
                     annuncio.name
                 )}</p>
-                <p class="h5">${annuncio.category}</p>
-                <p class="lead">${annuncio.price} €</p>`;
+                <p class="h5" style="color: var(--blue);">${annuncio.category}</p>
+                <p class="lead" style="color: var(--blue);">${annuncio.price} €</p>`;
 
                 cardWrapper.appendChild(div);
             });

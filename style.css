@@ -14,58 +14,68 @@ h4,
 }
 
 :root {
-    --yellow: rgb(242, 187, 5);
-    --black: rgb(1, 1, 1);
-    --red: rgb(236, 40, 51);
+    --beige: rgb(224, 193, 157);
+    /* Ex-yellow */
+    --white: #FFFFFF;
+    /* Ex-black */
+    --blue: rgb(68, 91, 117);
+    /* Ex-red */
+    --nav: #445B75;
+    /* Ex-nav */
+    --box: #D7DFE2
 }
 
 body {
-    background-color: var(--black);
-    color: var(--yellow);
+    background-color: #FAF3EB;
+    color: var(--beige);
 }
 
-.bg-yellow {
-    background-color: var(--yellow);
+.bg-nav {
+    background-color: var(--nav);
 }
 
-.bg-black {
-    background-color: var(--black);
+.bg-beige {
+    background-color: var(--beige);
 }
 
-.bg-red {
-    background-color: var(--red);
+.bg-white {
+    background-color: var(--white);
 }
 
-.text-yellow {
-    color: var(--yellow);
+.bg-blue {
+    background-color: var(--blue);
 }
 
-.text-black {
-    color: var(--black);
+.text-beige {
+    color: var(--beige);
 }
 
-.text-red {
-    color: var(--red);
+.text-white {
+    color: var(--white);
+}
+
+.text-blue {
+    color: var(--blue);
 }
 
 /* Navbar */
 .navbar {
-    height: 140px;
+
+    height: 100px;
     transition: 0.5s;
 }
 
 .nav-link {
-    color: var(--yellow);
-    font-weight: 700;
+    color: var(--beige);
+    font-weight: 800;
 }
 
 .nav-link:hover {
-    color: white !important;
-    text-shadow: 2px 2px 5px var(--red), -2px -2px 5px var(--red);
+    color: white !important
 }
 
 .logo {
-    width: 50px;
+    width: 60px;
 }
 
 .logo2 {
@@ -75,16 +85,16 @@ body {
 
 /* Header */
 .header {
-    background-image: url(https://media.istockphoto.com/id/1272787782/it/video/animazione-di-salto-iperspaziale.jpg?s=640x640&k=20&c=yrE1l4jixTXkl22hvR1WJd10oW79nVGGuwEDzQDo6zM=);
+    background-image: url(media/flower-4931280_1280.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .btn-custom {
-    color: var(--yellow);
-    background-color: var(--black);
-    border: 2px solid var(--yellow);
+    color: var(--blue);
+    background-color: var(--white);
+    border: 2px solid var(--blue);
     border-radius: 50px;
     margin: 0px 15px;
     padding: 20px 30px;
@@ -92,8 +102,9 @@ body {
 }
 
 .btn-custom:hover {
-    color: var(--black);
-    background-color: var(--yellow);
+    color: var(--white);
+    background-color: var(--beige);
+    border: 2px solid var(--blue);
     transform: scale(1.1);
 }
 
@@ -104,17 +115,18 @@ body {
 
 .col-custom {
     padding: 10px;
-    border: 2px solid var(--black);
+    border: 2px solid var(--white);
+    background-color: var(--blue);
     cursor: pointer;
     transition: 0.5s;
-    color: var(--black);
+    color: var(--white);
 }
 
 .col-custom:hover {
     transform: scale(1.1);
-    background-color: var(--black);
-    color: var(--red);
-    border: 2px solid var(--red);
+    background-color: var(--box);
+    color: var(--blue);
+    border: 2px solid var(--blue);
 }
 
 @media screen and (max-width: 600px) {
@@ -125,39 +137,57 @@ body {
 
 /* numeri incrementali */
 
+.flowe-field {
+    width: 70%;
+    height: auto;
+    margin-left: 5%;
+}
+
 .number {
     font-size: 50px;
     font-weight: 900;
 }
 
+.contenitore-numeri {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #445B75;
+}
+
 /* swiper */
 .swiper {
-    height: 600px;
+    height: 500px;
+
 }
 
 .card-review {
     height: 250px;
     width: 500px;
-    border: 2px solid var(--yellow);
+    border: 2px solid var(--white);
+    background-color: var(--box);
+    color: var(--blue);
     border-radius: 20px;
+    box-shadow: none;
+
 }
 
 .swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: none;
 }
 
 /* accordion style pagina annunci*/
 .accordion-item,
 .accordion-button {
-    background-color: var(--black);
-    color: var(--yellow);
+    background-color: var(--white);
+    color: var(--blue);
 }
 
 .accordion-button:not(.collapsed) {
-    color: var(--red);
-    background-color: var(--black);
+    color: var(--blue);
+    background-color: var(--white);
     box-shadow: none;
 }
 
@@ -168,9 +198,8 @@ body {
 /* card-custom */
 
 .card-custom {
-
     width: 30%;
-    border: 2px solid var(--yellow);
+    border: 2px solid var(--blue);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -181,12 +210,110 @@ body {
 }
 
 .img-card {
-    border-top-right-radius: 17px;
-    border-top-left-radius: 17px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+
 }
+
 
 /* titolo annunci */
 
 .h1-annunci {
     text-align: center;
+    color: var(--blue);
+}
+
+#wordInput {
+    max-width: 100%;
+}
+
+/* Chi Siamo */
+.circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.opener {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.moved {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.vh-75 {
+    height: 75vh;
+}
+
+.flip-card {
+    height: 400px;
+    width: 250px;
+    transition: 0.5s;
+}
+
+.flip-card:hover>.inner {
+    transform: rotateY(180deg);
+
+}
+
+.inner {
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--blue);
+    border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+
+}
+
+.inner-face {
+    height: 400px;
+    width: 250px;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    position: absolute;
+    backface-visibility: hidden;
+
+
+}
+
+.inner-back {
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 15px;
+    color: var(--blue);
 }
